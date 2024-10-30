@@ -10,7 +10,7 @@ Find more information on the [Kaugummi product page](https://machdyne.com/produc
 
 ## Programming Kaugummi
 
-Kaugummi has a JTAG interface and ships with a [DFU bootloader](https://github.com/machdyne/tinydfu-bootloader) that allows the included flash [MMOD](https://machdyne.com/product/mmod) to be programmed over the USB-C port.
+Kaugummi has a JTAG interface and ships with a [DFU bootloader](https://github.com/machdyne/tinydfu-bootloader) that allows the flash memory to be programmed over the USB-C port.
 
 ### DFU
 
@@ -22,7 +22,7 @@ Install [dfu-util](http://dfu-util.sourceforge.net) (Debian/Ubuntu):
 $ sudo apt install dfu-util
 ```
 
-Update the user gateware on the flash MMOD:
+Update the user gateware on the flash memory:
 
 ```
 $ sudo dfu-util -a 0 -D image.bit
@@ -46,7 +46,7 @@ Program the configuration SRAM:
 openFPGALoader -c usb-blaster image.bit
 ```
 
-Program the flash MMOD:
+Program the flash:
 
 ```
 openFPGALoader -f -c usb-blaster images/bootloader/tinydfu_kaugummi.bit
@@ -122,7 +122,7 @@ See the [Kakao Linux](https://github.com/machdyne/kakao) repo for the latest ins
 
 ### JTAG Header
 
-The 3.3V JTAG header can be used to program the FPGA SRAM as well as the MMOD flash memory. It can also be used to provide power (5V) to the board.
+The 3.3V JTAG header can be used to program the FPGA SRAM as well as the flash memory. It can also be used to provide power (5V) to the board.
 
 ```
 2 4 5
