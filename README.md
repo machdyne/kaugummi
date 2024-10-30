@@ -34,7 +34,7 @@ Detach the DFU device and continue the boot process:
 $ sudo dfu-util -a 0 -e
 ```
 
-It is possible to update the bootloader itself using DFU but you shouldn't attempt this unless you have a JTAG programmer (or another method to program the MMOD) available, in case you need to restore the bootloader.
+It is possible to update the bootloader itself using DFU but you shouldn't attempt this unless you have a JTAG programmer available, in case you need to restore the bootloader.
 
 ### JTAG
 
