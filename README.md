@@ -2,6 +2,8 @@
 
 Kaugummi is an FPGA computer designed by Lone Dynamics Corporation.
 
+![Kaugummi Computer](https://github.com/machdyne/kaugummi/blob/5c1a97a798fe1a9e097b1bd264d63cd1725bd8fb/kaugummi.png)
+
 This repo will contain schematics, PCB layouts, pinouts, a 3D-printable case, example gateware and documentation.
 
 Find more information on the [Kaugummi product page](https://machdyne.com/product/kaugummi-computer/).
